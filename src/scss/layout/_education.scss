@@ -1,0 +1,51 @@
+#education {
+    padding: 6rem;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    gap: 6rem;
+    background-color: #c5c5c5;
+
+    .image {
+        width: 450px;
+        height: auto;
+
+        img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+    }
+
+    .text {
+        max-width: 600px;
+
+        h1 {
+            font-size: 2rem;
+            margin: 0;
+        }
+
+        p {
+            font-size: 1rem;
+            color: #383D3B;
+        }
+    }
+
+    .cases {
+        display: flex;
+        // justify-content: space-around; //Hmmmm
+        gap: 4rem;
+
+        ul {
+            padding: 1rem;
+
+            li {
+                margin-bottom: 0.3rem;
+                font-size: 0.9rem;
+                color: #383D3B;
+            }
+        }
+    }
+}
