@@ -1,14 +1,13 @@
-// src/Header.jsx
 
-function Header() {
+function Header({ activeSection }) {
     return (
         <header>
-            <h1>LOGO</h1>
+            <h1>Elliot Borgkvist</h1>
             <ul>
-                <li><a href="#me">#Me</a></li>
-                <li><a href="#education">#Education</a></li>
-                <li><a href="#exProject">#Ex Project</a></li>
-                <li><a href="#contact">#Contact</a></li>
+                <li className={activeSection === "me" ? "active" : ""}><a href="#me">#Me</a></li>
+                <li className={activeSection === "education" ? "active" : ""}><a href="#education">#Education</a></li>
+                <li className={activeSection === "exProject" ? "active" : ""}><a href="#exProject">#Ex Project</a></li>
+                <li className={activeSection === "contact" ? "active" : ""}><a href="#contact">#Contact</a></li>
             </ul>
         </header>
     );

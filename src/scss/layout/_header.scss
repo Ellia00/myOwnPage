@@ -19,18 +19,20 @@ header {
         display: flex;
         gap: 20px;
         list-style: none;
-    }
 
-    li {
-        font-size: 1.2rem;
 
-        a {
-            color: inherit;
-            text-decoration: none;
+        li {
+            font-size: 1.2rem;
 
-            &:hover {
-                text-decoration: underline;
+            a {
+                color: inherit;
+                text-decoration: none;
+
             }
+        }
+
+        li.active a {
+            font-weight: bold;
         }
     }
 }
