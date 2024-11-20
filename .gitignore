@@ -24,4 +24,3 @@ dist-ssr
 *.sw?
 src/style.css
 src/style.css.map
-src/style.css
