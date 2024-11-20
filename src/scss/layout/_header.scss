@@ -5,34 +5,34 @@
 // src/App.scss
 
 header {
-    position: sticky;
-    top: 0;
+  width: 100%;
+  height: 80px;
+  position: fixed;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #e8a961;
+  padding: 0 2rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+  ul {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-    background-color: #e8a961;
-    padding: 0 2rem;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    gap: 20px;
+    list-style: none;
 
-    ul {
-        display: flex;
-        gap: 20px;
-        list-style: none;
+    li {
+      font-size: 1.2rem;
 
-
-        li {
-            font-size: 1.2rem;
-
-            a {
-                color: inherit;
-                text-decoration: none;
-
-            }
-        }
-
-        li.active a {
-            font-weight: bold;
-        }
+      a {
+        color: inherit;
+        text-decoration: none;
+      }
     }
+
+    li.active a {
+      font-weight: bold;
+    }
+  }
 }
