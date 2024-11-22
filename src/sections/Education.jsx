@@ -2,7 +2,7 @@ function Education() {
     return (
         <section id="education">
             <div className="image">
-                <img src="/_MG_3993.jpg" alt="Picture of me" />
+                <img src="/glimakrafolkhogskola.jpg" alt="Picture of Glimakra School" />
             </div>
             <div className="text">
                 <div>
