@@ -5,10 +5,11 @@
   justify-content: center;
   align-items: center;
   gap: 6rem;
-  background-color: #656565;
+  background-color: #3a3335;
+  color: #fefefe;
 
   .image {
-    width: 450px;
+    width: 350px;
     height: auto;
 
     img {
@@ -29,7 +30,7 @@
 
     p {
       font-size: 1rem;
-      color: #02020a;
+      color: #fefefe;
     }
   }
 
@@ -55,6 +56,7 @@
       li {
         a {
           text-transform: none;
+          color: #fefefe;
         }
       }
     }
