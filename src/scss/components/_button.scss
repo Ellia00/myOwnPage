@@ -2,3 +2,36 @@
 // This file contains all styles related to the button component.
 // -----------------------------------------------------------------------------
 @import "../abstracts/variables";
+
+.button-parent {
+  display: flex;
+  justify-items: center;
+
+  button {
+    position: relative;
+    height: auto;
+    width: auto;
+    background: 0;
+    border: 0;
+    margin-left: 0.3rem;
+
+    svg {
+      width: 90%;
+      position: absolute;
+      height: 90%;
+      top: 0;
+      left: 0;
+      
+    }
+  }
+  // THis doesnt wokr for some reason :)
+  button:hover {
+    transform: scale(1.1);
+    rect {
+        stroke: #e8a961;
+      }
+      path{
+        stroke: #e8a961
+      }
+  }
+}
