@@ -1,34 +1,37 @@
 #exProject {
-    padding: 6rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 6rem;
-    background-color: #8e8e8e;
+  padding: 6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6rem;
+  background-color: #8e8e8e;
 
-    .image {
-        width: 450px;
-        height: auto;
+  .image {
+    width: 450px;
+    height: auto;
 
-        img {
-            width: 100%;
-            height: auto;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
+    img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+  }
+
+  .text {
+    max-width: 600px;
+
+    h1 {
+      font-size: 2rem;
+      margin: 0;
     }
 
-    .text {
-        max-width: 600px;
-
-        h1 {
-            font-size: 2rem;
-            margin: 0;
-        }
-
-        p {
-            font-size: 1rem;
-            color: #02020A;
-        }
+    p {
+      font-size: 1rem;
+      color: #02020a;
+      a {
+        color: #e8a961;
+      }
     }
+  }
 }
