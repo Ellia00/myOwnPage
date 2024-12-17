@@ -101,7 +101,7 @@
 
     .contact-info {
       ul {
-        flex-direction: row; // Row layout for contact links on larger screens
+        flex-direction: column; // Row layout for contact links on larger screens
         gap: 1rem;
       }
     }
