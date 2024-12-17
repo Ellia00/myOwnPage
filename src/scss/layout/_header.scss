@@ -2,8 +2,8 @@
 // This file contains all styles related to the header of the site/application.
 // -----------------------------------------------------------------------------
 @import "../abstracts/variables";
-// src/App.scss
 
+// src/App.scss
 header {
   width: 100%;
   height: 80px;
@@ -16,6 +16,13 @@ header {
   background-color: #e8a961;
   padding: 0 2rem;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+  .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #fff;
+    text-transform: uppercase;
+  }
 
   ul {
     display: flex;
@@ -34,6 +41,25 @@ header {
 
     li.active a {
       font-weight: bold;
+    }
+  }
+
+  @media (max-width: 768px) {
+    justify-content: space-between;
+    padding: 0 1rem; // Reduce padding for smaller screens
+
+    .logo {
+      font-size: 1.2rem; // Adjust logo font size for smaller screens
+    }
+
+    ul {
+      display: none; // Hide the navigation links on small screens
+    }
+  }
+
+  @media (min-width: 769px) {
+    ul {
+      display: flex; // Show navigation links on larger screens
     }
   }
 }

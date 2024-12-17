@@ -1,13 +1,15 @@
 #exProject {
-  padding: 6rem;
+  padding: 6rem 1rem; // Adjust padding for smaller screens
   display: flex;
+  flex-direction: column; // Stack items on small screens
   justify-content: center;
   align-items: center;
-  gap: 6rem;
+  gap: 2rem; // Reduce gap for smaller screens
   background-color: #656565;
 
   .image {
-    width: 350px;
+    width: 100%; // Full width on smaller screens
+    max-width: 300px; // Limit the size on smaller screens
     height: auto;
 
     img {
@@ -19,18 +21,58 @@
   }
 
   .text {
-    max-width: 600px;
+    max-width: 100%; // Full width for smaller screens
 
     h1 {
-      font-size: 2rem;
-      margin: 0;
+      font-size: 1.5rem; // Smaller heading size
     }
 
     p {
-      font-size: 1rem;
+      font-size: 0.9rem; // Slightly smaller font size
       color: #02020a;
+
       a {
         color: #e8a961;
+      }
+    }
+  }
+
+  @media (min-width: 768px) {
+    flex-direction: row; // Row layout for tablets and up
+    padding: 6rem;
+    gap: 4rem; // Increase gap for larger screens
+
+    .image {
+      max-width: 350px; // Slightly larger image for tablets
+    }
+
+    .text {
+      max-width: 600px;
+
+      h1 {
+        font-size: 2rem; // Larger heading size for tablets
+      }
+
+      p {
+        font-size: 1rem; // Restore paragraph font size
+      }
+    }
+  }
+
+  @media (min-width: 1024px) {
+    gap: 6rem; // Further increase gap for desktops
+
+    .image {
+      max-width: 400px; // Even larger image for desktops
+    }
+
+    .text {
+      h1 {
+        font-size: 2.5rem; // Larger heading size for desktops
+      }
+
+      p {
+        font-size: 1.1rem; // Slightly larger paragraph text
       }
     }
   }

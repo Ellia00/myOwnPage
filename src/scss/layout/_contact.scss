@@ -1,15 +1,16 @@
 #contact {
-  padding: 6rem;
+  padding: 6rem 1rem; // Adjust padding for smaller screens
   display: flex;
-  flex-direction: row-reverse;
+  flex-direction: column-reverse; // Stack items on small screens, reverse for layout consistency
   justify-content: center;
   align-items: center;
-  gap: 6rem;
+  gap: 2rem; // Reduce gap for smaller screens
   background-color: #3a3335;
   color: #fefefe;
 
   .image {
-    width: 350px;
+    width: 100%; // Full width for smaller screens
+    max-width: 300px; // Limit the size on smaller screens
     height: auto;
 
     img {
@@ -21,23 +22,19 @@
   }
 
   .text {
-    max-width: 600px;
+    max-width: 100%; // Full width on small screens
 
     h1 {
-      font-size: 2rem;
-      margin: 0;
+      font-size: 1.5rem; // Smaller heading size for mobile
     }
 
     p {
-      font-size: 1rem;
+      font-size: 0.9rem; // Slightly smaller font size for mobile
       color: #fefefe;
     }
   }
 
   .contact-info {
-    // border: 2px solid red;
-    padding: 0;
-    margin: 0;
     margin-top: 2rem;
 
     p {
@@ -45,10 +42,8 @@
     }
 
     ul {
-      // border: 2px solid blue;
       margin: 0;
       padding: 0;
-
       display: flex;
       flex-direction: column;
       gap: 0.2rem;
@@ -58,9 +53,56 @@
           text-transform: none;
           color: #fefefe;
         }
-        a:hover{
+        a:hover {
           color: #e8a961;
         }
+      }
+    }
+  }
+
+  @media (min-width: 768px) {
+    flex-direction: row-reverse; // Row layout for tablets and up
+    padding: 6rem;
+    gap: 4rem; // Increase gap for larger screens
+
+    .image {
+      max-width: 350px; // Slightly larger image for tablets
+    }
+
+    .text {
+      max-width: 600px;
+
+      h1 {
+        font-size: 2rem; // Larger heading size
+      }
+
+      p {
+        font-size: 1rem; // Restore default paragraph size
+      }
+    }
+  }
+
+  @media (min-width: 1024px) {
+    gap: 6rem; // Further increase gap for desktops
+
+    .image {
+      max-width: 400px; // Larger image for desktops
+    }
+
+    .text {
+      h1 {
+        font-size: 2.5rem; // Larger heading size for desktops
+      }
+
+      p {
+        font-size: 1.1rem; // Slightly larger paragraph text for desktops
+      }
+    }
+
+    .contact-info {
+      ul {
+        flex-direction: row; // Row layout for contact links on larger screens
+        gap: 1rem;
       }
     }
   }

@@ -1,15 +1,15 @@
 #me {
     margin-top: 80px;
-    padding: 6rem;
+    padding: 6rem 1rem; // Adjust padding for smaller screens
     display: flex;
+    flex-direction: column; // Stack items on small screens
     justify-content: center;
     align-items: center;
-    gap: 6rem;
+    gap: 2rem; // Reduce gap for smaller screens
     background-color: #c5c5c5;
 
     .image {
-        max-width: 350px;
-        // width: auto;
+        max-width: 300px; // Reduce size for smaller screens
         height: auto;
 
         img {
@@ -21,16 +21,55 @@
     }
 
     .text {
-        max-width: 600px;
+        max-width: 100%; // Allow full width for small screens
 
         h1 {
-            font-size: 2rem;
-            margin: 0;
+            font-size: 1.5rem; // Smaller font size for headings
         }
 
         p {
-            font-size: 1rem;
+            font-size: 0.9rem; // Adjust paragraph font size
             color: #555;
+        }
+    }
+
+    @media (min-width: 768px) {
+        flex-direction: row; // Row layout for tablets and up
+        padding: 6rem;
+        gap: 4rem; // Increase gap for larger screens
+
+        .image {
+            max-width: 350px; // Larger image for tablets
+        }
+
+        .text {
+            max-width: 600px;
+
+            h1 {
+                font-size: 2rem; // Larger font size
+            }
+
+            p {
+                font-size: 1rem;
+            }
+        }
+    }
+
+    @media (min-width: 1024px) {
+        gap: 6rem; // Further increase gap for desktops
+
+        .image {
+            max-width: 400px; // Even larger image for desktops
+        }
+
+        .text {
+            h1 {
+                font-size: 2.5rem; // Larger heading for desktops
+            }
+
+            p {
+                font-size: 1.1rem; // Slightly larger paragraph text
+            }
         }
     }
 }

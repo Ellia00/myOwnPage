@@ -1,14 +1,15 @@
 #education {
-  padding: 6rem;
+  padding: 6rem 1rem; // Adjust padding for smaller screens
   display: flex;
-  flex-direction: row-reverse;
+  flex-direction: column-reverse; // Stack items on smaller screens, reverse for consistent layout
   justify-content: center;
   align-items: center;
-  gap: 6rem;
+  gap: 2rem; // Reduce gap for smaller screens
   background-color: #8e8e8e;
 
   .image {
-    width: 450px;
+    width: 100%; // Full width on smaller screens
+    max-width: 300px; // Limit the size on smaller screens
     height: auto;
 
     img {
@@ -20,36 +21,85 @@
   }
 
   .text {
-    max-width: 600px;
+    max-width: 100%; // Full width for smaller screens
 
     h1 {
-      font-size: 2rem;
-      margin: 0;
+      font-size: 1.5rem; // Smaller heading size
     }
 
     p {
-      font-size: 1rem;
+      font-size: 0.9rem; // Slightly smaller font size
       color: #383d3b;
     }
-    a{
-      // text-transform: lowercase;
+
+    a {
       color: #e8a961;
     }
   }
 
   .cases {
     display: flex;
-    // justify-content: space-around; //Hmmmm
-    gap: 4rem;
+    flex-direction: row; // Stack items in cases section
+    align-items: flex-start; // Align items to the left
+    gap: 1.5rem;
 
     ul {
-      padding: 1rem;
+      padding: 0;
 
       li {
         margin-bottom: 0.3rem;
         font-size: 0.9rem;
         color: #383d3b;
       }
+    }
+  }
+
+  @media (min-width: 768px) {
+    flex-direction: row-reverse; // Row layout for tablets and up
+    padding: 6rem;
+    gap: 4rem; // Increase gap for larger screens
+
+    .image {
+      max-width: 400px; // Slightly larger image
+    }
+
+    .text {
+      max-width: 600px;
+
+      h1 {
+        font-size: 2rem; // Larger heading size
+      }
+
+      p {
+        font-size: 1rem; // Restore default paragraph size
+      }
+    }
+
+    .cases {
+      flex-direction: row; // Horizontal layout for cases
+      gap: 4rem;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    gap: 6rem; // Further increase gap for desktops
+
+    .image {
+      max-width: 450px; // Full image size for larger screens
+    }
+
+    .text {
+      h1 {
+        font-size: 2.5rem; // Larger heading size for desktops
+      }
+
+      p {
+        font-size: 1.1rem; // Slightly larger paragraph text
+      }
+    }
+
+    .cases {
+      gap: 6rem; // Increase spacing between cases
     }
   }
 }
