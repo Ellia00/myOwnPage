@@ -45,11 +45,11 @@ header {
   }
 
   @media (max-width: 768px) {
-    justify-content: space-between;
+    justify-content: center;
     padding: 0 1rem; // Reduce padding for smaller screens
-
+    font-size: 0.9rem; // Reduce font size for smaller screens
     .logo {
-      font-size: 1.2rem; // Adjust logo font size for smaller screens
+      font-size: 1rem; // Adjust logo font size for smaller screens
     }
 
     ul {
