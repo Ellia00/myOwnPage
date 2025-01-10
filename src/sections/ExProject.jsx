@@ -2,7 +2,7 @@ function ExProject() {
     return (
         <section id="exProject">
             <div className="image">
-                <img src="/Snapchat-1695812432.jpg" alt="Picture of me" />
+                <img src="/Snapchat-1695812432Compressed.jpg" alt="Picture of me" />
             </div>
             <div className="text">
                 <h1>#Ex Project</h1>

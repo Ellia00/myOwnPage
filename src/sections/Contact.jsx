@@ -18,7 +18,7 @@ function Contact() {
   return (
     <section id="contact">
       <div className="image">
-        <img src="/315180233_670966547952560_1368967394108862490_n.jpg" alt="Picture of me" />
+        <img src="/315180233_670966547952560_1368967394108862490_nCompressed.jpg" alt="Picture of me" />
       </div>
       <div className="text">
         <h1>#Contact</h1>

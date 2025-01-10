@@ -2,7 +2,7 @@ function Me() {
     return (
         <section id="me">
             <div className="image">
-                <img src="/_MG_3993.jpg" alt="Picture of me" />
+                <img src="/_MG_3993Compressed.jpg" alt="Picture of me" />
             </div>
             <div className="text">
                 <h1>#Me</h1>
