@@ -5,8 +5,8 @@
   justify-content: center;
   align-items: center;
   gap: 2rem; // Reduce gap for smaller screens
-  background-color: #3a3335;
-  color: #fefefe;
+  background-color: #fefefe;
+  color: #000000;
 
   .image {
     width: 100%; // Full width for smaller screens
@@ -30,7 +30,7 @@
 
     p {
       font-size: 0.9rem; // Slightly smaller font size for mobile
-      color: #fefefe;
+      color: #383d3b;
     }
   }
 
@@ -51,7 +51,7 @@
       li {
         a {
           text-transform: none;
-          color: #fefefe;
+          color: #383d3b;
         }
         a:hover {
           color: #e8a961;
