@@ -21,7 +21,7 @@ function Contact() {
         <img src="/315180233_670966547952560_1368967394108862490_nCompressed.jpg" alt="Another picture of me" />
       </div>
       <div className="text">
-        <h1>#Contact</h1>
+        <h2>#Contact</h2>
         <p>
           If you would like to get in touch with me, feel free to reach out
           through any of the following methods:

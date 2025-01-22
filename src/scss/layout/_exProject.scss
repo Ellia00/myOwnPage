@@ -7,6 +7,11 @@
   gap: 2rem; // Reduce gap for smaller screens
   background-color: #fefefe;
 
+  h2 {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+  }
+
   .image {
     width: 100%; // Full width on smaller screens
     max-width: 300px; // Limit the size on smaller screens
